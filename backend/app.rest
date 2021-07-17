@@ -1,0 +1,192 @@
+###
+GET http://localhost:3000/
+
+###
+POST http://localhost:3000/signup/1/paciente
+content-type: application/json
+
+{
+    "cedula" : "24680221", 
+    "nombre": "gren",
+    "apellido": "suarez", 
+    "correo": "grenxiitha@gmail.com",
+    "ciudad": "barqto",
+    "estado": "lara",
+    "direccion": "tamaca",
+    "numtlf": "0426231935", 
+    "password": "gren",
+    "idRol": "1"
+}
+
+###
+POST http://localhost:3000/signup/servicio
+content-type: application/json
+
+{
+    "idservi": "4",
+    "especialidad": "oftalmologia"
+}
+
+###
+PUT http://localhost:3000/id
+
+###
+DELETE http://localhost:3000/id
+
+###
+GET http://localhost:3000/listarServi/servicio
+
+### 
+PUT  http://localhost:3000/updateServi/60ef3889f7365d1394d9d9ff
+content-type: application/json
+
+{
+    "especialidad": "oftalmologia2"
+}
+###
+DELETE http://localhost:3000/eliminarServi/60ef3889f7365d1394d9d9ff
+
+###
+GET http://localhost:3000/obtenerServi/60ef3889f7365d1394d9d9ff
+
+###
+GET http://localhost:3000/listarPaciente/paciente
+
+###
+POST http://localhost:3000/signup/rol
+content-type: application/json
+
+{
+    "idRol": "3",
+    "nombre": "centro medico"
+}
+
+###
+POST http://localhost:3000/signup
+Content-Type: application/json
+
+{
+"cedula": "23833428",
+"nombre": "jose", 
+"apellido": "Deeks",
+"correo": "josedeeks@gmail.com",
+"ciudad": "Barquisimeto",
+"estado": "lara",
+"direccion": "cañada",
+"numtlf" :"0412-5217887",
+"password":"12345",
+"idrol": "paciente"
+}
+
+###
+POST http://localhost:3000/signin
+Content-Type: application/json
+
+{
+"correo": "castillo@gmail.com",
+"password":"12345"
+}
+
+###
+GET http://localhost:3000/listarcentroS/centroSalud
+
+###
+GET http://localhost:3000/listarMedicos/medico
+
+###
+GET http://localhost:3000/listarPaciente/paciente
+
+###
+GET http://localhost:3000/listarUsuarios
+
+###
+GET http://localhost:3000/logout/user
+
+###
+
+POST http://localhost:3000/signup/centroSalud
+Content-Type: application/json
+
+
+{
+ "cedula" : "J-22326543",  
+"nombre": "clinica canaval",
+"correo": "canaval@gmail.com",
+"ciudad": "Barquisimeto",
+"estado": "Apure",
+"direccion": "Las veritas",
+"numtlf" :"0412-5217888",
+"password":"12345",
+"idrol": "Centro de Salud"
+}
+###
+
+POST http://localhost:3000/signup/paciente
+Content-Type: application/json
+
+{
+    "cedula" : "24680221", 
+    "nombre": "Betza",
+    "apellido": "almao", 
+    "correo": "almaob@gmail.com",
+    "ciudad": "barqto",
+    "estado": "lara",
+    "direccion": "tamaca",
+    "numtlf": "0426231935", 
+    "password": "12345",
+    "idrol": "Paciente"
+}
+
+###
+
+POST http://localhost:3000/signup/medico
+Content-Type: application/json
+
+{
+    "cedula" : "24418409", 
+    "nombre": "emmanuel",
+    "apellido": "nelo", 
+    "correo": "emmanuel@gmail.com",
+    "ciudad": "barqto",
+    "estado": "lara",
+    "direccion": "tamaca",
+    "numtlf": "0426231935", 
+    "password": "12345",
+    "idrol": "Medico",
+    "especialidad": "odontologo"
+}
+
+###
+POST  http://localhost:3000/perfil/clinica canaval/comentario
+Content-Type: application/json
+
+{
+"comment": "Quiero mil dolares"
+}
+
+
+###
+GET http://localhost:3000/listarComentario/Laboratorios Mascia/comentario
+
+###
+
+POST http://localhost:3000/solicitud
+Content-Type: application/json
+
+{
+    "rif" : "24680221", 
+    "nombre": "Castillo",
+    "correo": "holiwis@gmail.com",
+    "numtlf": "0426231935"
+}
+
+###
+
+GET http://localhost:3000/listarSolicitudes/solicitud
+
+###
+
+DELETE http://localhost:3000/eliminarSolicitud/60f1a283e6de4a15e0da9159
+
+###
+GET  http://localhost:3000/buscarsolitud/60f1a24ce6de4a15e0da9155
